@@ -17,6 +17,8 @@ public class Scoreboard_Controller : MonoBehaviour {
     private int buildIndex;
 
     public bool isLastLevel;
+    public bool isLevel2;
+
 
     // Use this for initialization
     void Start () {
@@ -46,13 +48,24 @@ public class Scoreboard_Controller : MonoBehaviour {
 
         //Enter player 1 victory
         if (isLastLevel) {
-            if (playerOneScore > 1)
+            if (playerOneScore > 10)
             {
                 SceneManager.LoadScene("Player1win");
             }
-        }else
+        }
+        else if (isLevel2)
         {
-            LoadNextLevel();
+            if (playerOneScore == 5)
+            {
+                LoadNextLevel();
+            }
+        }
+        else
+        {
+            if (playerOneScore == 3)
+            {
+                LoadNextLevel();
+            }
         }
 
 
@@ -64,18 +77,28 @@ public class Scoreboard_Controller : MonoBehaviour {
         playerTwoScoreText.text = playerTwoScore.ToString();
 
         //Enter player 2 victory
-        if (isLastLevel){
-            if (playerTwoScore > 1)
+        if (isLastLevel)
+        {
+            if (playerTwoScore > 10)
             {
                 SceneManager.LoadScene("Player2win");
             }
         }
+        else if (isLevel2)
+        {
+            if (playerTwoScore == 5)
+            {
+                LoadNextLevel();
+            }
+        }
         else
         {
-            LoadNextLevel();
+            if (playerTwoScore == 3)
+            {
+                LoadNextLevel();
+            }
         }
+
     }
-
-
 
 }

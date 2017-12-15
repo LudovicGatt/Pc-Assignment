@@ -13,8 +13,6 @@ public class Ball_Controller : MonoBehaviour {
     void Start() {
 
         rb = GetComponent<Rigidbody2D>();
-        Vector3 launchDirection = new Vector3();
-        rb.velocity = new Vector3 (8f,0f,0f);
         //Pause ball logic for 2.5 seconds
         StartCoroutine(Pause());
     }
@@ -92,9 +90,6 @@ public class Ball_Controller : MonoBehaviour {
         }
         //Assign velocity based off of where we launch the ball
         rb.velocity = launchDorection;
-
-
-
     }
 
 
