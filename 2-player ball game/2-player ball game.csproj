@@ -84,7 +84,6 @@
     <Compile Include="Assets\Ball_Controller.cs" />
     <Compile Include="Assets\Menu_Controller.cs" />
     <Compile Include="Assets\Mouse.cs" />
-    <Compile Include="Assets\MovingBlocks.cs" />
     <Compile Include="Assets\Player_input_controller.cs" />
     <Compile Include="Assets\Scoreboard_Controller.cs" />
     <Compile Include="Assets\Total.cs" />
