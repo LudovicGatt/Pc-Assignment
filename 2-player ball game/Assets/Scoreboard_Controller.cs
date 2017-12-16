@@ -19,6 +19,9 @@ public class Scoreboard_Controller : MonoBehaviour {
     public bool isLastLevel;
     public bool isLevel2;
 
+    public static int totalPlayer1;
+    public static int totalPlayer2;
+
 
     // Use this for initialization
     void Start () {
@@ -97,8 +100,12 @@ public class Scoreboard_Controller : MonoBehaviour {
             {
                 LoadNextLevel();
             }
-        }
-
+        }       
+    }
+    public string getScene()
+    {
+        //gets the name of the current active scene
+        return SceneManager.GetActiveScene().name;
     }
 
 }

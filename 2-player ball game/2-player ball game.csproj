@@ -87,6 +87,7 @@
     <Compile Include="Assets\MovingBlocks.cs" />
     <Compile Include="Assets\Player_input_controller.cs" />
     <Compile Include="Assets\Scoreboard_Controller.cs" />
+    <Compile Include="Assets\Total.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
