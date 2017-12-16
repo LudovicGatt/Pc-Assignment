@@ -51,7 +51,7 @@ public class Scoreboard_Controller : MonoBehaviour {
 
         //Enter player 1 victory
         if (isLastLevel) {
-            if (playerOneScore > 10)
+            if (playerOneScore == 10)
             {
                 SceneManager.LoadScene("Player1win");
             }
@@ -82,7 +82,7 @@ public class Scoreboard_Controller : MonoBehaviour {
         //Enter player 2 victory
         if (isLastLevel)
         {
-            if (playerTwoScore > 10)
+            if (playerTwoScore == 10)
             {
                 SceneManager.LoadScene("Player2win");
             }
