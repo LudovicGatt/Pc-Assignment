@@ -66,28 +66,23 @@ public class Ball_Controller : MonoBehaviour {
         }
         if (xDirection == 1)
         {
-            launchDorection.y = 8f;
-        }
-
-        if (xDirection == 2)
-        {
-            launchDorection.x = 0f;
+            launchDorection.x = 8f;
         }
 
         if (yDirection == 0)
         {
-           launchDorection.y = -8f;
+            launchDorection.y = -8f;
         }
+
         if (yDirection == 1)
         {
-            launchDorection.x = 8f;
-
+            launchDorection.y = 8f;
         }
         if (yDirection == 2)
         {
-            launchDorection.x = 0f;
-
+            launchDorection.y = 0f;
         }
+
         //Assign velocity based off of where we launch the ball
         rb.velocity = launchDorection;
     }
