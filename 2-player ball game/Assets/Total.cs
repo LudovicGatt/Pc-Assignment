@@ -6,11 +6,11 @@ using UnityEngine.UI;
 public class Total : MonoBehaviour
 {
 
-    public Text PlayrtOneScore;
-    public Text PlayrtTowScore;
+    public Text PlayerOneScore;
+    public Text PlayerTwoScore;
 
-    private int TotalScorePlayerOne;
-    private int TotalScorePlayerTow;
+    private float TotalScorePlayerOne;
+    private float TotalScorePlayerTwo;
     // Use this for initialization
     void Start()
     {
@@ -21,9 +21,9 @@ public class Total : MonoBehaviour
     void Update()
     {
         TotalScorePlayerOne = Scoreboard_Controller.totalPlayer1;
-        PlayrtOneScore.text = TotalScorePlayerOne.ToString();
+        PlayerOneScore.text = TotalScorePlayerOne.ToString();
 
-        TotalScorePlayerTow = Scoreboard_Controller.totalPlayer2;
-        PlayrtTowScore.text = TotalScorePlayerTow.ToString();
+        TotalScorePlayerTwo = Scoreboard_Controller.totalPlayer2;
+        PlayerTwoScore.text = TotalScorePlayerTwo.ToString();
     }
 }

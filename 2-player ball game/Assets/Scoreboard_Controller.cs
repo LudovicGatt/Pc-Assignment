@@ -14,7 +14,7 @@ public class Scoreboard_Controller : MonoBehaviour {
 
     public int playerOneScore;
     public int playerTwoScore;
-    private int buildIndex;
+   
 
     public bool isLastLevel;
     public bool isLevel2;
@@ -46,6 +46,8 @@ public class Scoreboard_Controller : MonoBehaviour {
     public void GivePlayerOneAPoint()
     {
         playerOneScore += 1;
+        totalPlayer1 += 1;
+       
 
         playerOneScoreText.text = playerOneScore.ToString();
 
@@ -76,6 +78,7 @@ public class Scoreboard_Controller : MonoBehaviour {
     public void GivePlayerTwoAPoint()
     {
         playerTwoScore += 1;
+        totalPlayer2 += 1;
 
         playerTwoScoreText.text = playerTwoScore.ToString();
 
